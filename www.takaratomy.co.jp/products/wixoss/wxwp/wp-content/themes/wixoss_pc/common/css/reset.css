@@ -1,0 +1,104 @@
+@charset "utf-8";
+
+/* for Reset
+=========================================*/
+
+#newlayout,
+#newlayout div,
+.newlayoutInner div,
+#newlayout dl,
+#newlayout dt,
+#newlayout dd,
+#newlayout ul,
+.newlayoutInner ul,
+#newlayout ol,
+.newlayoutInner ol,
+#newlayout li,
+.newlayoutInner li,
+#newlayout h1,
+#newlayout h2,
+#newlayout h3,
+#newlayout h4,
+#newlayout h5,
+#newlayout h6,
+#newlayout pre,
+#newlayout form,
+.newlayoutInner form,
+#newlayout fieldset,
+#newlayout input,
+.newlayoutInner input,
+#newlayout textarea,
+#newlayout p,
+.newlayoutInner p,
+#newlayout blockquote,
+#newlayout th,
+#newlayout td {
+	margin:0;
+	padding:0;
+}
+
+#newlayout table {
+	border-collapse:collapse;
+	border-spacing:0;
+}
+
+#newlayout fieldset,
+#newlayout img,
+.newlayoutInner img {
+	border:0;
+}
+
+#newlayout address,
+#newlayout caption,
+#newlayout cite,
+#newlayout code,
+#newlayout dfn,
+#newlayout em,
+#newlayout th,
+#newlayout var {
+	font-style:normal;
+	font-weight:normal;
+}
+
+#newlayout ol,
+.newlayoutInner ol,
+#newlayout ul,
+.newlayoutInner ul {
+	list-style:none;
+}
+
+#newlayout caption,
+#newlayout th {
+	text-align:left;
+}
+
+#newlayout h1,
+#newlayout h2,
+#newlayout h3,
+#newlayout h4,
+#newlayout h5,
+#newlayout h6 {
+	font-size:100%;
+	font-weight:normal;
+}
+
+#newlayout q:before,
+#newlayout q:after {
+	content:'';
+}
+
+#newlayout abbr,
+#newlayout acronym {
+	border:0;
+}
+
+
+/* for Talking Browser */
+#newlayout .reader {
+	position: absolute;
+	overflow: hidden;
+	left: 0px;
+	top: 0px;
+	width: 1px;
+	height:1px;
+}

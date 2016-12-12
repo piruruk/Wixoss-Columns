@@ -1,0 +1,33 @@
+﻿@charset "utf-8";
+
+
+/* 1. for All
+=========================================*/
+
+body#newlayout {
+	font-size: 83%;
+	font-family: "ＭＳ Ｐゴシック", "HiraKakuPro-W3", "ヒラギノ角ゴ Pro W3", "Osaka", sans-serif;
+	line-height: 1.8;
+	color: #666666;
+}
+body#newlayout a:link {
+	color: #0066cc;
+	text-decoration: underline;
+}
+body#newlayout a:visited {
+	color: #663399;
+	text-decoration: underline;
+}
+body#newlayout a:hover,
+body#newlayout a:focus {
+	color: #f86300;
+	text-decoration: none;
+}
+body#newlayout a:active {
+	color: #f86300;
+	text-decoration: none;
+}
+
+body#newlayout .largeFont {
+	font-size: 120%;
+}

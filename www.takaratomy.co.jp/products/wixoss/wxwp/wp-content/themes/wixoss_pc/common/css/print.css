@@ -1,0 +1,111 @@
+@charset "utf-8";
+
+/* for Print
+=========================================*/
+
+* html body#newlayout {
+	zoom: 60%;
+}
+
+body#newlayout .localNaviLink01 .iconLink01 {
+	width: 711px;
+}
+
+body#newlayout .naviOff .contentsMenuCol {
+	width: 976px;
+}
+
+
+body#newlayout #headContainer #headUtility #headLinkList02 #globalNavi ul li {
+	zoom: 99%;
+}
+
+* html body#newlayout #subNav .nav .innerNav.month {
+	width: 173px;
+}
+
+* html body#newlayout .detailCol #thumbnail li#image05 {
+	margin-right: 9px;
+}
+
+* html body#newlayout .categoryRssArea dl dl dd,
+* html body#newlayout .categoryRssArea dl dl dd span,
+* html body#newlayout .mainContents .rightContents01,
+* html body#newlayout .mainContents .rightContents01 .rightContents01Inner,
+* html body#newlayout .mainContents .menuBox dd .productInfoCol .colInner,
+* html body#newlayout .mainContents .menuBox dd.menuBoxInner .wrap,
+* html body#newlayout .mainContents .menuBox dd .productInfoCol .colInner dt a,
+* html body#newlayout .mainContents .rightContents01 .rightContents01Inner .bannerAreaType02 li,
+* html body#newlayout .mainContents .rightContents01 .rightContents01Inner .bannerAreaType02 li a,
+* html body#newlayout .mainContents .rightContents01 .rightContents01Inner .mobileBox dd {
+	height: 1%;
+}
+* html body#newlayout .mainContents .rightContents01 {
+	margin-top: 0;
+	padding-top: 0;
+}
+	
+
+* html body#newlayout .contentsMenuCol02 .col01,
+* html body#newlayout .contentsMenuCol02 .col02 {
+	margin-right: 21px;
+}
+
+
+* html body#newlayout .mainContents .leftContents .leftContentsInner .leftContents01 .products {
+	display: block;
+	width: 350px;
+	height: 138px;
+}
+
+
+body#newlayout.top .mainContents {
+}
+body#newlayout.top .contents,
+body#newlayout.top .contents .leftContents,
+body#newlayout.top .contents .rightContents {
+	overflow: visible;
+}
+
+body#newlayout .footpageTopLink {
+	height: 20px;
+}
+body#newlayout .footpageTopLink img {
+	display: none;
+}
+
+
+
+* html body#newlayout.top .categoryTitle span.iconL {
+	top: 7px;
+}
+*:first-child+html body#newlayout.top .categoryTitle span.iconL {
+	top: 7px;
+}
+body#newlayout.top .categoryTitle span.iconL {
+	top: 50px\9;
+}
+* html body#newlayout.top .categoryTitle span.iconR {
+	top: 7px;
+}
+*:first-child+html body#newlayout.top .categoryTitle span.iconR {
+	top: 7px;
+}
+body#newlayout.top .categoryTitle span.iconR {
+	top: 50px\9;
+}
+
+
+
+
+#newlayout #pageContainer {
+	border-bottom: solid 3px #0033aa;
+}
+
+.newlayoutInner #footContainer {
+	border-top: none;
+	border-bottom: none;
+}
+#newlayout #mainContainer {
+	overflow: hidden\9;
+}

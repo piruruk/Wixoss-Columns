@@ -1,0 +1,960 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ja" lang="ja">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="Content-Style-Type" content="text/css" />
+<meta http-equiv="Content-Script-Type" content="text/javascript" />
+<title>お探しのページは見つかりません - 404 Not Found｜タカラトミー</title>
+<meta name="Description" content="玩具・雑貨などの製造・販売を行う、株式会社タカラトミーの公式サイトです。" />
+<meta name="Keywords" content="おもちゃ,玩具,ゲーム,雑貨,タカラトミー" />
+<link rel="shortcut icon" href="/status/favicon.ico" />
+<link rel="stylesheet" type="text/css" href="/status/common/css/import.css" media="all" />
+<link rel="stylesheet" type="text/css" href="/status/common/css/print.css" media="print" />
+<link rel="stylesheet" type="text/css" href="/status/common/css/other.css" media="all" />
+<script type="text/javascript" src="/status/common/js/jquery.js"></script>
+<script type="text/javascript" src="/status/common/js/jquery.easing.js"></script>
+
+<script type="text/javascript" src="/status/common/js/jquery.scrollto.js"></script>
+<script type="text/javascript" src="/status/common/js/rollover.js"></script>
+<script type="text/javascript" src="/status/common/js/common.js" charset="shift_jis"></script>
+<script type="text/javascript" src="/status/common/js/tabNavi.js"></script>
+</head>
+<body id="newlayout">
+<div id="pageContainer">
+	<div class="newlayoutInner"><div class="forVoice"><a id="pageTop" name="pageTop">ページの開始</a></div>
+	<!-- forVoice End -->
+	<hr />
+	<div id="headContainer">
+		<div id="headLogo">
+			<p><a href="http://www.takaratomy.co.jp"><img src="http://www.takaratomy.co.jp/common/images/header_logo.gif" alt="タカラトミー" width="101" height="54" /></a></p>
+		</div>
+		<div id="headUtility">
+			<div class="forVoice">ここからサイト内共通メニュー</div>
+			<div id="headLinkList01">
+				<ul>
+					<li class="kyouyu"><a href="http://www.takaratomy.co.jp/products/kyouyu/index.html"><img src="http://www.takaratomy.co.jp/common/images/header_tx001.gif" alt="共遊玩具" width="98" height="25" class="rollover" /></a></li>
+					<li class="support"><a href="http://www.takaratomy.co.jp/support/index.html"><img src="http://www.takaratomy.co.jp/common/images/header_tx002.gif" alt="お客様サポート" width="102" height="25" class="rollover" /></a></li>
+					<li class="event"><a href="http://www.takaratomy.co.jp/event/index.html"><img src="http://www.takaratomy.co.jp/common/images/header_tx003.gif" alt="イベント・キャンペーン" width="136" height="25" class="rollover" /></a></li>
+					<li class="newlist"><a href="http://www.takaratomy.co.jp/products/newlist/"><img src="http://www.takaratomy.co.jp/common/images/header_tx004.gif" alt="新商品一覧" width="86" height="25" class="rollover" /></a></li>
+					<li class="online"><a href="http://takaratomymall.jp/?from=t2top" target="_blank"><img src="http://www.takaratomy.co.jp/common/images/header_tx014.gif" alt="オンラインショップ" width="135" height="25" class="rollover" /></a></li>
+					<li class="release"><a href="http://www.takaratomy.co.jp/product_release/index.html"><img src="http://www.takaratomy.co.jp/common/images/header_tx005.gif" alt="商品リリース" width="90" height="25" class="rollover" /></a></li>
+					<li class="sitemap"><a href="http://www.takaratomy.co.jp/sitemap/index.html"><img src="http://www.takaratomy.co.jp/common/images/header_tx006.gif" alt="サイトマップ" width="90" height="25" class="rollover" /></a></li>
+					<li class="english"><a href="http://www.takaratomy.co.jp/english/index.html"><img src="http://www.takaratomy.co.jp/common/images/header_tx008.gif" alt="English" width="73" height="25" class="rollover" /></a></li>
+				</ul>
+			</div>
+			<div id="headLinkList02">
+				<div id="globalNavi">
+					<ul>
+						<li><a href="http://www.takaratomy.co.jp/products/index.html"><img src="http://www.takaratomy.co.jp/common/images/header_tx009.gif" alt="商品情報" width="86" height="32" class="rollover" /></a></li>
+						<li><a href="http://www.takaratomy.co.jp/company/index.html"><img src="http://www.takaratomy.co.jp/common/images/header_tx010.gif" alt="会社情報" width="86" height="32" class="rollover" /></a></li>
+						<li><a href="http://www.takaratomy.co.jp/ir/index.html"><img src="http://www.takaratomy.co.jp/common/images/header_tx011.gif" alt="投資家情報" width="86" height="32" class="rollover" /></a></li>
+						<li><a href="http://www.takaratomy.co.jp/company/recruit/index.html"><img src="http://www.takaratomy.co.jp/common/images/header_tx012.gif" alt="採用情報" width="86" height="32" class="rollover" /></a></li>
+						<li><a href="http://www.takaratomy.co.jp/business/index.html"><img src="http://www.takaratomy.co.jp/common/images/header_tx013.gif" alt="法人のお客様" width="111" height="32" class="rollover" /></a></li>
+					</ul>
+				</div>
+				<div class="forVoice">ここからサイト内検索</div>
+				<div id="search">
+					<form name="search_form" action="http://tt-search.dga.jp/" method="GET" id="srchBox">
+						<ul>
+							<li class="searchInputArea">
+								<input type="text" name="kw" value="" class="searchBox" id="srchInput">
+								<input type="hidden" name="ie" value="u">
+							</li>
+							<li class="searchButton">
+								<input name="imageField" type="image" src="http://www.takaratomy.co.jp/common/images/header_bt001.gif" alt="さがす" id="searchSubmitButton" class="rollover" />
+							</li>
+						</ul>
+					</form>
+				</div>
+				<div id="headSnsBtn">
+					<ul>
+						<li><a href="https://www.facebook.com/takaratomytoys" target="_blank"><img src="http://www.takaratomy.co.jp/common/images/header_bt002.gif" width="34" height="34" alt="facebook" /></a></li>
+						<li><a href="https://twitter.com/takaratomytoys" target="_blank"><img src="http://www.takaratomy.co.jp/common/images/header_bt003.gif" width="34" height="34" alt="twitter" /></a></li>
+						<li><a href="http://www.youtube.com/user/takaratomychannel" target="_blank"><img src="http://www.takaratomy.co.jp/common/images/header_bt004.gif" width="34" height="34" alt="youtube" /></a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- headContainer End -->
+	<hr /></div>
+<script type="text/javascript">
+	(function() {
+	var da = document.createElement('script');
+	da.type = 'text/javascript'; da.async = true;
+	if ('https:' == document.location.protocol) {
+	da.src =  'https://rsv.dga.jp/s/t_tomy/search_tool_n1.js';
+	} else {
+	da.src =  'http://cache.dga.jp/s/t_tomy/search_tool_n1.js';
+	}
+	var sc  = document.getElementsByTagName('script')[0];
+	sc.parentNode.insertBefore(da, sc);
+	})();
+	
+	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+	ga('create', 'UA-41451305-1', 'takaratomy.co.jp');
+	ga('send', 'pageview');
+</script>
+
+<div id="topicPath">
+<p><span class="forVoice">現在位置は</span><a href="http://www.takaratomy.co.jp/index.html">ホーム</a><img src="/status/common/images/com_ic015.gif" alt="の中の" width="6" height="9" /><em>お探しのページは見つかりません</em><span class="forVoice">です</span></p>
+
+</div>
+<hr />
+<div class="forVoice">ここから本文</div>
+<div id="mainContainer" class="naviOff">
+<div id="contents">
+<h1 class="heading01"><span>お探しのページは見つかりません - 404 Not Found</span></h1>
+<div class="notFoundBox01">
+<div class="colLeft">
+
+<div class="inner">
+<div class="subInner">
+<h2><img src="/status/images/404_ti001.gif" alt="ごめんなさい！お探しのページは見つかりません。The requested URL does not exist." width="540" height="45" /></h2>
+<p class="mt15">アクセスいただいたページは削除、変更されたか、現在利用できない可能性があります。</p>
+<p class="mt10">お手数ですが、タカラトミーホームページのトップ、または下記のリンク、<br />
+サイト内検索より再度お探しください。</p>
+<h3 class="heading404">下記より目的のページをお探しください。</h3>
+
+<ul class="list404">
+<li><a href="http://www.takaratomy.co.jp/index.html">トップページ</a></li>
+<li><a href="http://www.takaratomy.co.jp/products/index.html">商品情報</a></li>
+<li><a href="http://www.takaratomy.co.jp/sitemap/index.html">サイトマップ</a></li>
+</ul>
+<div class="searchBox">
+<form action="http://tt-search.dga.jp/" name="search" id="srchBox">
+<ul>
+<li class="searchInputArea">
+<input type="text" name="kw" id="srchInput4" value="" />
+    <input type="hidden" name="product" value="1">
+    <input type="hidden" name="ie" value="u">
+</li>
+<li class="searchButton">
+<input name="imageField" type="image" src="/status/common/images/header_bt001.gif" alt="さがす" id="searchSubmitButton" class="rollover" />
+
+</li>
+</ul>
+</form>
+
+
+<script type="text/javascript">
+
+    (function() {
+     var da = document.createElement('script');
+     da.type = 'text/javascript'; da.async = true;
+     if ('https:' == document.location.protocol) {
+     da.src =  'https://rsv.dga.jp/s/t_tomy/search_tool_n1.js';
+     } else {
+     da.src =  'http://cache.dga.jp/s/t_tomy/search_tool_n1.js';
+     }
+     var sc  = document.getElementsByTagName('script')[0];
+     sc.parentNode.insertBefore(da, sc);
+     })();
+
+</script>
+</div>
+<h3 class="heading404">Please find content from the link shown below</h3>
+<ul class="list404">
+<li><a href="/english/index.html">English</a></li>
+</ul>
+
+</div>
+</div>
+</div>
+<p class="image"><img src="/status/images/404_il001.gif" alt="" width="290" height="436" /></p>
+</div>
+<h2 class="heading02"><span>商品をさがす</span></h2>
+<div id="topTabNav" class="tabNav">
+<ul>
+<li id="tab03" class="tabBtn on"><a href="javascript:void(0);" onfocus="this.blur();"><span>キャラクター別にさがす</span></a></li>
+<li id="tab01" class="tabBtn"><a href="javascript:void(0);" onfocus="this.blur();"><span>種類からさがす</span></a></li>
+<li id="tab02" class="tabBtn"><a href="javascript:void(0);" onfocus="this.blur();"><span>あそびからさがす</span></a></li>
+<li id="tab04" class="tabBtn"><a href="javascript:void(0);" onfocus="this.blur();"><span>年齢別にさがす</span></a></li>
+<li id="tab05" class="tabBtn"><a href="javascript:void(0);" onfocus="this.blur();"><span>共遊玩具からさがす</span></a></li>
+</ul>
+<p class="btn"><a href="/products/list/index.html"><img src="/products/images/products_bt007.gif" alt="一覧" width="55" height="21" class="rollover" /></a></p>
+<!-- tabList End -->
+<div id="tabBox03" class="tabBox">
+<!-- キャラクター別 -->
+
+
+
+
+<ul>
+
+<li>
+<dl>
+<dt><a href="/products/category/products_il043.html"><img src="/products/images/products_il043.gif" alt="" width="46" height="46" /></a></dt>
+<dd><a href="/products/category/products_il043.html">トミカ</a></dd>
+</dl>
+</li>
+
+
+
+
+
+<li>
+<dl>
+<dt><a href="/products/category/products_il044.html"><img src="/products/images/products_il044.gif" alt="" width="46" height="46" /></a></dt>
+<dd><a href="/products/category/products_il044.html">プラレール</a></dd>
+</dl>
+</li>
+
+
+
+
+
+<li>
+<dl>
+<dt><a href="/products/category/products_il050.html"><img src="/products/images/products_il050.gif" alt="" width="46" height="46" /></a></dt>
+<dd><a href="/products/category/products_il050.html">リカちゃん</a></dd>
+</dl>
+</li>
+
+
+
+
+
+<li>
+<dl>
+<dt><a href="/products/category/products_il061.html"><img src="/products/images/products_il061.gif" alt="" width="46" height="46" /></a></dt>
+<dd><a href="/products/category/products_il061.html">こえだちゃん</a></dd>
+</dl>
+</li>
+
+
+
+
+
+<li>
+<dl>
+<dt><a href="/products/category/products_il045.html"><img src="/products/images/products_il045.gif" alt="" width="46" height="46" /></a></dt>
+<dd><a href="/products/category/products_il045.html">トランスフォーマー</a></dd>
+</dl>
+</li>
+
+</ul>
+
+
+
+
+
+<ul>
+
+<li>
+<dl>
+<dt><a href="/products/category/products_il057.html"><img src="/products/images/products_il057.gif" alt="" width="46" height="46" /></a></dt>
+<dd><a href="/products/category/products_il057.html">デュエル・マスターズ</a></dd>
+</dl>
+</li>
+
+
+
+
+
+<li>
+<dl>
+<dt><a href="/products/category/products_il058.html"><img src="/products/images/products_il058.gif" alt="" width="46" height="46" /></a></dt>
+<dd><a href="/products/category/products_il058.html">イナズマイレブン</a></dd>
+</dl>
+</li>
+
+
+
+
+
+<li>
+<dl>
+<dt><a href="/products/category/products_il053.html"><img src="/products/images/products_il053.gif" alt="" width="46" height="46" /></a></dt>
+<dd><a href="/products/category/products_il053.html">ディズニー</a></dd>
+</dl>
+</li>
+
+
+
+
+
+<li>
+<dl>
+<dt><a href="/products/category/products_il063.html"><img src="/products/images/products_il063.gif" alt="" width="46" height="46" /></a></dt>
+<dd><a href="/products/category/products_il063.html">LINE TOWN</a></dd>
+</dl>
+</li>
+
+
+
+
+
+<li>
+<dl>
+<dt><a href="/products/category/products_il064.html"><img src="/products/images/products_il064.gif" alt="" width="46" height="46" /></a></dt>
+<dd><a href="/products/category/products_il064.html">ZOIDS</a></dd>
+</dl>
+</li>
+
+</ul>
+
+
+
+
+
+<ul>
+
+<li>
+<dl>
+<dt><a href="/products/category/products_il048.html"><img src="/products/images/products_il048.gif" alt="" width="46" height="46" /></a></dt>
+<dd><a href="/products/category/products_il048.html">ポケットモンスター</a></dd>
+</dl>
+</li>
+
+
+
+
+
+<li>
+<dl>
+<dt><a href="/products/category/products_il065.html"><img src="/products/images/products_il065.gif" alt="" width="46" height="46" /></a></dt>
+<dd><a href="/products/category/products_il065.html">ほっぺちゃん</a></dd>
+</dl>
+</li>
+
+
+
+
+
+<li>
+<dl>
+<dt><a href="/products/category/products_il052.html"><img src="/products/images/products_il052.gif" alt="" width="46" height="46" /></a></dt>
+<dd><a href="/products/category/products_il052.html">ジェニー</a></dd>
+</dl>
+</li>
+
+
+
+
+
+<li>
+<dl>
+<dt><a href="/products/category/products_il056.html"><img src="/products/images/products_il056.gif" alt="" width="46" height="46" /></a></dt>
+<dd><a href="/products/category/products_il056.html">黒ひげ危機一発</a></dd>
+</dl>
+</li>
+
+
+
+
+
+<li>
+<dl>
+<dt><a href="/products/category/products_il066.html"><img src="/products/images/products_il066.gif" alt="" width="46" height="46" /></a></dt>
+<dd><a href="/products/category/products_il066.html">アニア</a></dd>
+</dl>
+</li>
+
+</ul>
+
+
+
+
+
+<ul>
+
+<li>
+<dl>
+<dt><a href="/products/category/products_il059.html"><img src="/products/images/products_il059.gif" alt="" width="46" height="46" /></a></dt>
+<dd><a href="/products/category/products_il059.html">チャギントン</a></dd>
+</dl>
+</li>
+
+
+
+
+
+<li>
+<dl>
+<dt><a href="/products/category/products_il049.html"><img src="/products/images/products_il049.gif" alt="" width="46" height="46" /></a></dt>
+<dd><a href="/products/category/products_il049.html">きかんしゃトーマス</a></dd>
+</dl>
+</li>
+
+
+
+
+
+<li>
+<dl>
+<dt><a href="/products/category/products_il067.html"><img src="/products/images/products_il067.gif" alt="" width="46" height="46" /></a></dt>
+<dd><a href="/products/category/products_il067.html">プリティーリズム</a></dd>
+</dl>
+</li>
+
+
+
+
+</ul>
+
+</div>
+<!-- tabBox End -->
+<div id="tabBox01" class="tabBox">
+<!-- 種類 -->
+
+
+
+
+<ul>
+
+<li>
+<dl>
+<dt><a href="/products/category/products_il001.html"><img src="/products/images/products_il001.gif" alt="" width="46" height="46" /></a></dt>
+<dd><a href="/products/category/products_il001.html">おとこのこむけ</a></dd>
+</dl>
+</li>
+
+
+
+
+
+<li>
+<dl>
+<dt><a href="/products/category/products_il002.html"><img src="/products/images/products_il002.gif" alt="" width="46" height="46" /></a></dt>
+<dd><a href="/products/category/products_il002.html">おんなのこむけ</a></dd>
+</dl>
+</li>
+
+
+
+
+
+<li>
+<dl>
+<dt><a href="/products/category/products_il006.html"><img src="/products/images/products_il006.gif" alt="" width="46" height="46" /></a></dt>
+<dd><a href="/products/category/products_il006.html">ゲーム</a></dd>
+</dl>
+</li>
+
+
+
+
+
+<li>
+<dl>
+<dt><a href="/products/category/products_il005_1.html"><img src="/products/images/products_il005_1.gif" alt="" width="46" height="46" /></a></dt>
+<dd><a href="/products/category/products_il005_1.html">カードゲーム</a></dd>
+</dl>
+</li>
+
+
+
+
+
+<li>
+<dl>
+<dt><a href="/products/category/products_il021_1.html"><img src="/products/images/products_il021_1.gif" alt="" width="46" height="46" /></a></dt>
+<dd><a href="/products/category/products_il021_1.html">ゲームソフト</a></dd>
+</dl>
+</li>
+
+</ul>
+
+
+
+
+
+<ul>
+
+<li>
+<dl>
+<dt><a href="/products/category/products_il004.html"><img src="/products/images/products_il004.gif" alt="" width="46" height="46" /></a></dt>
+<dd><a href="/products/category/products_il004.html">ライフ&リラックス</a></dd>
+</dl>
+</li>
+
+
+
+
+
+<li>
+<dl>
+<dt><a href="/products/category/products_il003.html"><img src="/products/images/products_il003.gif" alt="" width="46" height="46" /></a></dt>
+<dd><a href="/products/category/products_il003.html">ベビー・プリスクール</a></dd>
+</dl>
+</li>
+
+
+
+
+
+<li>
+<dl>
+<dt><a href="/products/category/portal.html"><img src="/products/images/portal.gif" alt="" width="46" height="46" /></a></dt>
+<dd><a href="/products/category/portal.html">ポータル（サイト）</a></dd>
+</dl>
+</li>
+
+
+
+
+</ul>
+
+</div>
+<!-- tabBox End -->
+<div id="tabBox02" class="tabBox">
+<!-- あそび -->
+
+
+
+
+<ul>
+
+<li>
+<dl>
+<dt><a href="/products/category/products_il008.html"><img src="/products/images/products_il008.gif" alt="" width="46" height="46" /></a></dt>
+<dd><a href="/products/category/products_il008.html">くるま・でんしゃ</a></dd>
+</dl>
+</li>
+
+
+
+
+
+<li>
+<dl>
+<dt><a href="/products/category/products_il009.html"><img src="/products/images/products_il009.gif" alt="" width="46" height="46" /></a></dt>
+<dd><a href="/products/category/products_il009.html">対戦</a></dd>
+</dl>
+</li>
+
+
+
+
+
+<li>
+<dl>
+<dt><a href="/products/category/products_il010.html"><img src="/products/images/products_il010.gif" alt="" width="46" height="46" /></a></dt>
+<dd><a href="/products/category/products_il010.html">カスタマイズ</a></dd>
+</dl>
+</li>
+
+
+
+
+
+<li>
+<dl>
+<dt><a href="/products/category/products_il011.html"><img src="/products/images/products_il011.gif" alt="" width="46" height="46" /></a></dt>
+<dd><a href="/products/category/products_il011.html">シューティング</a></dd>
+</dl>
+</li>
+
+
+
+
+
+<li>
+<dl>
+<dt><a href="/products/category/products_il012.html"><img src="/products/images/products_il012.gif" alt="" width="46" height="46" /></a></dt>
+<dd><a href="/products/category/products_il012.html">RC</a></dd>
+</dl>
+</li>
+
+</ul>
+
+
+
+
+
+<ul>
+
+<li>
+<dl>
+<dt><a href="/products/category/products_il013.html"><img src="/products/images/products_il013.gif" alt="" width="46" height="46" /></a></dt>
+<dd><a href="/products/category/products_il013.html">変形・合体</a></dd>
+</dl>
+</li>
+
+
+
+
+
+<li>
+<dl>
+<dt><a href="/products/category/products_il014.html"><img src="/products/images/products_il014.gif" alt="" width="46" height="46" /></a></dt>
+<dd><a href="/products/category/products_il014.html">なりきり</a></dd>
+</dl>
+</li>
+
+
+
+
+
+<li>
+<dl>
+<dt><a href="/products/category/products_il029.html"><img src="/products/images/products_il029.gif" alt="" width="46" height="46" /></a></dt>
+<dd><a href="/products/category/products_il029.html">フィギュア</a></dd>
+</dl>
+</li>
+
+
+
+
+
+<li>
+<dl>
+<dt><a href="/products/category/products_il019.html"><img src="/products/images/products_il019.gif" alt="" width="46" height="46" /></a></dt>
+<dd><a href="/products/category/products_il019.html">人形・きせかえ</a></dd>
+</dl>
+</li>
+
+
+
+
+
+<li>
+<dl>
+<dt><a href="/products/category/products_il018.html"><img src="/products/images/products_il018.gif" alt="" width="46" height="46" /></a></dt>
+<dd><a href="/products/category/products_il018.html">おしゃれ</a></dd>
+</dl>
+</li>
+
+</ul>
+
+
+
+
+
+<ul>
+
+<li>
+<dl>
+<dt><a href="/products/category/products_il017.html"><img src="/products/images/products_il017.gif" alt="" width="46" height="46" /></a></dt>
+<dd><a href="/products/category/products_il017.html">てづくり</a></dd>
+</dl>
+</li>
+
+
+
+
+
+<li>
+<dl>
+<dt><a href="/products/category/products_il016.html"><img src="/products/images/products_il016.gif" alt="" width="46" height="46" /></a></dt>
+<dd><a href="/products/category/products_il016.html">料理</a></dd>
+</dl>
+</li>
+
+
+
+
+
+<li>
+<dl>
+<dt><a href="/products/category/products_il020.html"><img src="/products/images/products_il020.gif" alt="" width="46" height="46" /></a></dt>
+<dd><a href="/products/category/products_il020.html">ままごと</a></dd>
+</dl>
+</li>
+
+
+
+
+
+<li>
+<dl>
+<dt><a href="/products/category/products_il015.html"><img src="/products/images/products_il015.gif" alt="" width="46" height="46" /></a></dt>
+<dd><a href="/products/category/products_il015.html">ぬいぐるみ</a></dd>
+</dl>
+</li>
+
+
+
+
+
+<li>
+<dl>
+<dt><a href="/products/category/products_il006_2.html"><img src="/products/images/products_il006_2.gif" alt="" width="46" height="46" /></a></dt>
+<dd><a href="/products/category/products_il006_2.html">ゲーム</a></dd>
+</dl>
+</li>
+
+</ul>
+
+
+
+
+
+<ul>
+
+<li>
+<dl>
+<dt><a href="/products/category/products_il005_2.html"><img src="/products/images/products_il005_2.gif" alt="" width="46" height="46" /></a></dt>
+<dd><a href="/products/category/products_il005_2.html">カードゲーム</a></dd>
+</dl>
+</li>
+
+
+
+
+
+<li>
+<dl>
+<dt><a href="/products/category/products_il021.html"><img src="/products/images/products_il021.gif" alt="" width="46" height="46" /></a></dt>
+<dd><a href="/products/category/products_il021.html">ゲームソフト</a></dd>
+</dl>
+</li>
+
+
+
+
+
+<li>
+<dl>
+<dt><a href="/products/category/products_il026.html"><img src="/products/images/products_il026.gif" alt="" width="46" height="46" /></a></dt>
+<dd><a href="/products/category/products_il026.html">ギフト</a></dd>
+</dl>
+</li>
+
+
+
+
+
+<li>
+<dl>
+<dt><a href="/products/category/products_il027.html"><img src="/products/images/products_il027.gif" alt="" width="46" height="46" /></a></dt>
+<dd><a href="/products/category/products_il027.html">癒し・インテリア</a></dd>
+</dl>
+</li>
+
+
+
+
+
+<li>
+<dl>
+<dt><a href="/products/category/products_il025.html"><img src="/products/images/products_il025.gif" alt="" width="46" height="46" /></a></dt>
+<dd><a href="/products/category/products_il025.html">コミュニケーション</a></dd>
+</dl>
+</li>
+
+</ul>
+
+
+
+
+
+<ul>
+
+<li>
+<dl>
+<dt><a href="/products/category/products_il024.html"><img src="/products/images/products_il024.gif" alt="" width="46" height="46" /></a></dt>
+<dd><a href="/products/category/products_il024.html">おせわ</a></dd>
+</dl>
+</li>
+
+
+
+
+
+<li>
+<dl>
+<dt><a href="/products/category/products_il007.html"><img src="/products/images/products_il007.gif" alt="" width="46" height="46" /></a></dt>
+<dd><a href="/products/category/products_il007.html">コレクション</a></dd>
+</dl>
+</li>
+
+
+
+
+
+<li>
+<dl>
+<dt><a href="/products/category/products_il023.html"><img src="/products/images/products_il023.gif" alt="" width="46" height="46" /></a></dt>
+<dd><a href="/products/category/products_il023.html">デジタルグッズ</a></dd>
+</dl>
+</li>
+
+
+
+
+
+<li>
+<dl>
+<dt><a href="/products/category/products_il028.html"><img src="/products/images/products_il028.gif" alt="" width="46" height="46" /></a></dt>
+<dd><a href="/products/category/products_il028.html">おえかき・ねんど</a></dd>
+</dl>
+</li>
+
+
+
+
+
+<li>
+<dl>
+<dt><a href="/products/category/products_il030.html"><img src="/products/images/products_il030.gif" alt="" width="46" height="46" /></a></dt>
+<dd><a href="/products/category/products_il030.html">ベビー・あやし・知育</a></dd>
+</dl>
+</li>
+
+</ul>
+
+
+
+
+</div>
+<!-- tabBox End -->
+<div id="tabBox04" class="tabBox">
+<!-- 年齢 -->
+
+
+
+
+<ul>
+
+<li>
+<dl>
+<dt><a href="/products/category/products_il003_3.html"><img src="/products/images/products_il003_3.gif" alt="" width="46" height="46" /></a></dt>
+<dd><a href="/products/category/products_il003_3.html">ベビー・プリスクール</a></dd>
+</dl>
+</li>
+
+
+
+
+
+<li>
+<dl>
+<dt><a href="/products/category/products_il031.html"><img src="/products/images/products_il031.gif" alt="" width="46" height="46" /></a></dt>
+<dd><a href="/products/category/products_il031.html">3歳以上</a></dd>
+</dl>
+</li>
+
+
+
+
+
+<li>
+<dl>
+<dt><a href="/products/category/products_il033.html"><img src="/products/images/products_il033.gif" alt="" width="46" height="46" /></a></dt>
+<dd><a href="/products/category/products_il033.html">小学生</a></dd>
+</dl>
+</li>
+
+
+
+
+
+<li>
+<dl>
+<dt><a href="/products/category/products_il034.html"><img src="/products/images/products_il034.gif" alt="" width="46" height="46" /></a></dt>
+<dd><a href="/products/category/products_il034.html">中学生</a></dd>
+</dl>
+</li>
+
+
+
+
+
+<li>
+<dl>
+<dt><a href="/products/category/products_il035.html"><img src="/products/images/products_il035.gif" alt="" width="46" height="46" /></a></dt>
+<dd><a href="/products/category/products_il035.html">15歳以上</a></dd>
+</dl>
+</li>
+
+</ul>
+
+
+
+
+
+<ul>
+
+<li>
+<dl>
+<dt><a href="/products/category/products_il036.html"><img src="/products/images/products_il036.gif" alt="" width="46" height="46" /></a></dt>
+<dd><a href="/products/category/products_il036.html">20歳以上</a></dd>
+</dl>
+</li>
+
+
+
+
+
+<li>
+<dl>
+<dt><a href="/products/category/products_il037.html"><img src="/products/images/products_il037.gif" alt="" width="46" height="46" /></a></dt>
+<dd><a href="/products/category/products_il037.html">シニア向け</a></dd>
+</dl>
+</li>
+
+
+
+
+</ul>
+
+</div>
+<!-- tabBox End -->
+<div id="tabBox05" class="tabBox" style="text-align: center;">
+<ul>
+<li style="width: 235px; margin-left: 170px;">
+<dl>
+<dt><a href="/products/kyouyu/toylist/index.html#box1"><img src="/products/kyouyu/images/wanchan.gif" alt="" /></a></dt>
+<dd style="margin-top: 15px; width: 165px;"><a href="/products/kyouyu/toylist/index.html#box1">盲導犬マークのおもちゃ</a></dd>
+</dl>
+</li>
+<li style="width: 235px; margin-left: 50px;">
+<dl>
+<dt><a href="/products/kyouyu/toylist/index.html#box2"><img src="/products/kyouyu/images/usachan.gif" alt="" /></a></dt>
+<dd style="margin-top: 15px; width: 165px;"><a href="/products/kyouyu/toylist/index.html#box2">うさぎマークのおもちゃ</a></dd>
+</dl>
+</li>
+</ul>
+</div>
+<!-- tabBox End -->
+</div>
+<!-- tabNav End -->
+
+<p class="mt20 aC"><a href="http://www.takaratomy.co.jp/index.html/index.html"><img src="/status/images/404_bt001.gif" alt="トップページに戻る" width="221" height="36" class="rollover" /></a></p>
+</div>
+
+<!-- contents End -->
+</div>
+<!-- mainContainer End -->
+<div class="pageTopLink footpageTopLink">
+<p class="btn"><a href="#pageTop"><img src="/status/common/images/com_bt005.gif" alt="ページ上部へ" width="108" height="25" class="rollover" /></a></p>
+</div>
+<!-- pageTopLink End -->
+	<div class="newlayoutInner"><hr />
+	<div id="footContainer">
+		<div id="footUtility">
+			<div class="forVoice">ここからフッターメニュー</div>
+			<ul>
+				<li><a href="http://www.takaratomy.co.jp/sitepolicy/index.html"><img src="http://www.takaratomy.co.jp/common/images/footer_tx001.gif" alt="このサイトについて" width="104" height="12" class="rollover" /></a></li>
+				<li><a href="http://www.takaratomy.co.jp/rss/index.html"><img src="http://www.takaratomy.co.jp/common/images/footer_tx002.gif" alt="RSSについて" width="77" height="12" class="rollover" /></a></li>
+				<li><a href="http://www.takaratomy.co.jp/inquiry/index.html"><img src="http://www.takaratomy.co.jp/common/images/footer_tx003.gif" alt="お問い合わせ" width="76" height="12" class="rollover" /></a></li>
+				<li><a href="http://www.takaratomy.co.jp/privacypolicy/index.html"><img src="http://www.takaratomy.co.jp/common/images/footer_tx004.gif" alt="個人情報保護方針" width="100" height="12" class="rollover" /></a></li>
+			</ul>
+		</div>
+		<div id="footLogo">
+			<ul>
+				<li id="copyright"><img src="http://www.takaratomy.co.jp/common/images/footer_logo001.gif" alt="&copy;TOMY" width="41" height="9" /></li>
+				<li><a href="http://www.takaratomy.co.jp/index.html"><img src="http://www.takaratomy.co.jp/common/images/footer_logo002.gif" alt="株式会社タカラトミー" width="156" height="14" /></a></li>
+			</ul>
+		</div>
+	</div>
+	<!-- footContainer End -->
+	<div class="forVoice">ページの終わり</div>
+	<div class="forVoice"><a href="#pageTop">ページの先頭へ戻る</a></div></div>
+
+</div>
+
+<!-- footContainer End -->
+<div class="forVoice">ページの終わり</div>
+<div class="forVoice"><a href="#pageTop">ページの先頭へ戻る</a></div>
+</div>
+</div>
+<!-- pageContainer End -->
+</body>
+</html>

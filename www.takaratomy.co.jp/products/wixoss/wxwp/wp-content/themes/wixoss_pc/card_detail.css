@@ -1,0 +1,143 @@
+@charset "utf-8";
+
+/*カード詳細*/
+.card_detail{
+	width:800px;
+	background:/*#208cb0*/  url(../images/card_detail_back_03.html) no-repeat 0 bottom;
+	padding-bottom:20px;
+	padding-top: 14px;
+	color:#FFFFFF;
+	}
+.card_rarity{
+	width:50px;
+	position:absolute;
+	left:700px;
+	top:42px;
+	text-align:right;
+	font-size:22px;
+	font-weight:bold;
+	}
+.card_detail_title{
+	background:/*#208cb0*/  url(../images/card_detail_back_01.html) no-repeat;
+	height:53px;
+	color:#FFF;
+	font-weight:bold;
+	margin:0;
+	padding-left:25px;
+	padding-top:20px;
+	}
+.card_detail_title h3{
+	font-weight:bold;
+	font-size: 17px;
+	}
+.card_detail_kana {
+	margin: 0 0 0 15px;
+	font-size: 13px;
+	}
+.card_detail_date{
+	background:/*#208cb0*/ url(../images/card_detail_back_02.html) repeat-y;
+	margin:0;
+	}
+.card_date_box{
+	width:750px;
+	margin: 0 15px;
+	background:/*#208cb0*/ url(../images/bg_img.html) repeat;
+	padding:20px 0 10px 10px;
+	min-height:350px;
+	}
+.card_img{
+	padding-right:15px;
+	float:left;
+	font-size:85%;
+	}
+.card_date_box table{
+	width:468px;
+	border:none;
+	border-collapse: collapse;
+ 	border-spacing: 0;
+	text-align:center;
+	vertical-align:middle;
+	font-size:90%;
+	}
+.card_date_box th/*カード詳細項目*/{
+	background: url(../images/card_list_bg.html) repeat-x;
+	background-color: #042d58;
+	color:#31cce8;
+	}
+.card_date_box td{
+	background:#212832;
+	}
+.card_date_box td img{
+	display:inline;
+	vertical-align:text-bottom;
+	}
+.card_date_box th,.card_date_box td{
+	width:/*116px*/25%;
+	border: 1px solid #7a98c0;
+	margin:0;
+	padding-top:5px;
+	padding-bottom:5px;
+	table-layout: fixed;
+	word-wrap:break-word;
+	}
+.card_skill{
+	min-height:90px;
+	}
+.card_text{
+	text-align:left;
+	padding:5px;
+	}
+
+/*ルールFAQ　質問*/
+.card_FAQ , .card_INFO{
+	background:#212832; 
+	border:#7a98c0 1px solid;
+	width:94.8%; 
+	margin-top:30px; 
+	padding:10px;
+	clear:both;
+	}
+.card_FAQ h3 , .regist_date h3{
+	font-weight:bold;
+	color:#31cce8;
+	}
+.card_FAQ p , .info_content{
+	border-top:#999999 1px dotted;
+	padding:5px 0;
+	font-size:95%;
+	}
+
+.card_ruleFAQ_q,.card_ruleFAQ_a{
+	line-height:2em;
+	padding:5px 20px 20px 22px;
+	}
+.card_ruleFAQ_q{
+	background: url(../images/icon_faq_q.html) no-repeat 3px 5px;
+	font-weight:bold;
+	color: #f8e163;
+	}
+	
+.card_ruleFAQ_a{
+	background: url(../images/icon_faq_a.html) no-repeat 3px 5px;
+	}	
+
+
+.card_link_white a,.card_color_white {
+	color: #FBF9D2;
+}/*リンク色　白*/
+.card_link_red a,.card_color_red {
+	color: #F04228;
+}/*リンク色　赤*/
+.card_link_blue a,.card_color_blue {
+	color: #6c9af9;
+}/*リンク色　青*/
+.card_link_green a,.card_color_green {
+	color: #76D25B;
+}/*リンク色　緑*/
+.card_link_black a,.card_color_black {
+	color: #a460de;
+}/*リンク色　黒*/
+.card_link_null a,.card_color_null {
+	color: #F9F9F9;
+}/*リンク色　無*/
+
